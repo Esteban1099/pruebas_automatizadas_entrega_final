@@ -8,7 +8,7 @@ Esto habilitara en git la posibilidad de descargar repositorios con paths largos
 También es importante que el repositorio lo clonen en una ruta raíz debido al la longitud de los paths
 
 # Pruebas automatizadas entrega final
-El Readme para el entregable del sprint 1 se encuentra en la carpeta "Desarrollo sprint 1" y el archivo Readme para los entregables de todas las semanas trabajadas en el curso se encuentra dentro de la carpeta "Entregables 8 semanas"
+El Readme para el entregable del sprint 1 de la entrega final se encuentra en la carpeta "Desarrollo sprint 1" y el archivo Readme para los entregables de todas las semanas trabajadas en el curso se encuentra dentro de la carpeta "Entregables 8 semanas"
 
 # Video entrega final
 
