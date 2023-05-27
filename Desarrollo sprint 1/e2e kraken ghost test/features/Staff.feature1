@@ -1,0 +1,67 @@
+Feature: Staff
+    
+@user1 @web
+Scenario: Editar nombre de usuario en Staff
+  Given I navigate to page "<URL1>"
+    And I wait for 1 seconds
+    And I enter email "<USERNAME1>"
+    And I save device snapshot in file with path "Create Staff/Escenario_1/IngresarCorreo"
+    And I enter password "<PASSWORD1>"
+    And I save device snapshot in file with path "Create Staff/Escenario_1/IngresarContrasenia"
+    And I click login
+    And I save device snapshot in file with path "Create Staff/Escenario_1/ClickLogin"
+  When I click member
+    And I save device snapshot in file with path "Create Staff/Escenario_1/ListadoStaff"
+    And I wait for 1 seconds
+    And I click first user
+    And I save device snapshot in file with path "Create Staff/Escenario_1/EditarMiembro"
+  Then I enter staff name "$name_1"
+    And I save device snapshot in file with path "Create Staff/Escenario_1/NombreMiembro"
+    And I click save habilitar
+    And I save device snapshot in file with path "Create Staff/Escenario_1/GuardarMiembro"
+    And I click member
+    And I save device snapshot in file with path "Create Staff/Escenario_1/ListadoStaff2"
+
+
+@user2 @web
+Scenario: Invitar usuario a staff
+  Given I navigate to page "<URL1>"
+    And I wait for 1 seconds
+    And I enter email "<USERNAME1>"
+    And I save device snapshot in file with path "Create Staff/Escenario_2/IngresarCorreo"
+    And I enter password "<PASSWORD1>"
+    And I save device snapshot in file with path "Create Staff/Escenario_2/IngresarContrasenia"
+    And I click login
+    And I save device snapshot in file with path "Create Staff/Escenario_2/ClickLogin"
+  When I click member
+    And I save device snapshot in file with path "Create Staff/Escenario_2/ListadoStaff"
+    And I wait for 1 seconds
+    And I click new
+    And I save device snapshot in file with path "Create Staff/Escenario_2/NuevoMiembro"
+    And I enter staff email "$email_1"
+  Then I confirm create
+    And I save device snapshot in file with path "Create Staff/Escenario_2/ConfirmaNuevoMiembro"
+
+
+@user3 @web
+Scenario: Agregar website a perfil
+  Given I navigate to page "<URL1>"
+    And I wait for 1 seconds
+    And I enter email "<USERNAME1>"
+    And I save device snapshot in file with path "Create Staff/Escenario_3/IngresarCorreo"
+    And I enter password "<PASSWORD1>"
+    And I save device snapshot in file with path "Create Staff/Escenario_3/IngresarContrasenia"
+    And I click login
+    And I save device snapshot in file with path "Create Staff/Escenario_3/ClickLogin"
+  When I click settings menu
+    And I save device snapshot in file with path "Create Staff/Escenario_3/MenuProfile"
+    And I wait for 1 seconds
+    And I click my profile
+    And I save device snapshot in file with path "Create Staff/Escenario_3/DetallePerfil"
+  Then I enter website "$url_1"
+    And I save device snapshot in file with path "Create Staff/Escenario_3/EditarSitioMiembro"
+    And I click save habilitar
+    And I save device snapshot in file with path "Create Staff/Escenario_3/GuardarMiembro"
+    And I click member
+    And I save device snapshot in file with path "Create Staff/Escenario_3/ListadoStaff2"
+
