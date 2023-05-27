@@ -12,4 +12,4 @@ El Readme para el entregable del sprint 1 se encuentra en la carpeta "Desarrollo
 
 # Video entrega final
 
-https://drive.google.com
+https://drive.google.com/file/d/1L6A--ly42FVAe7JoSh3Uveo7FmyeSVKu/view?usp=sharing
