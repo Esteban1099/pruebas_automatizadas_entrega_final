@@ -15,9 +15,9 @@
     9. Mientras Ghost esté ejecutándose habrá una terminal de Node activa, en caso de querer detener la aplicación solo basta con cerrar la terminal creada
     10. Para iniciar nuevamente la aplicación de Ghost se ejecuta el siguiente comando: `ghost start`
    
-2. Actualización de usuario y contraseña en archivo e2e_ghost_testing\e2e cypress ghost test\cypress\fixtures\settings.json del repositorio
+2. Actualización de usuario y contraseña en archivo Desarrollo sprint 1\e2e cypress ghost test\cypress\fixtures\settings.json del repositorio
     1. Durante la instalación de Ghost, se creó un usuario administrador por lo tanto el usuario y contraseña se debe configurar en las propiedades del proyecto clonado anteriormente
-    2. En la carpeta `e2e_ghost_testing\e2e cypress ghost test\cypress\fixtures` encontrará un archivo `settings.json`
+    2. En la carpeta `Desarrollo sprint 1\e2e cypress ghost test\cypress\fixtures` encontrará un archivo `settings.json`
     3. Encontrará dos propiedades 'username' en la linea 2 y 'password' en la linea 3, en el valor de la propiedad 'username' colocar el correo creado y en el valor de parámetro 'password' colocar la contraseña          creada anteriormente.
       
 3. Ejecución escenarios de prueba E2E con Cypress para ghost 3.41.1
@@ -25,10 +25,31 @@
     2. Abrimos una terminal en el computador y ejecutamos el siguiente comando 'cypress open', esto nos abrirá la aplicacion local de Cypress, en la esquina superior de la interfaz de Cypress validamos                    que la versión corresponda a la 12.11.0
     3. En la interfaz de Cypress seleccionamos 'add project', luego en la ventana que se despliega, subimos la carpeta 'e2e_ghost_testing\e2e cypress ghost test' que se encuentra en este repositorio
     4. Cuando la carpeta suba, se actualizará la interfaz de Cypress, seleccionamos E2E Testing (el icono indica que ya se encuentra configurado)
-    5. Debemos seleccionar el buscador donde deseamos correr las pruebas, recomendamos seleccionar Google Chrome, cuando lo seleccionemos damos clic en el botón 'start E2E testing in Broswer' donde Broswer es el          buscador que usted selecciono
-    6. En este momento se debió abrir una página en el buscador seleccionado anteriormente normalmente en la ruta 'http://localhost:55116/', en esta ventana en la            parte izquierda donde estan los modulos        de navegacion seleccionamos 'Specs'
-    7. Esto actualiza el módulo principal donde vemos los archivos archivo 'ghost_chrome.cy.js', 'ghost_edge.cy.js', 'ghost_firefox.cy.js' que está en la carpeta 'cypress/e2e', damos click en el archivo
-    8. Finalmente vemos como se ejecutan las pruebas y el informe resultado de estas una vez finalicen
+    5. Debemos seleccionar el buscador Google Chrome, cuando lo seleccionemos damos clic en el botón 'start E2E testing in Broswer'
+    6. En este momento se debió abrir una página en el buscador seleccionado anteriormente normalmente en la ruta 'http://localhost:55116/', en esta ventana en la parte izquierda donde estan los modulos de                navegacion seleccionamos 'Specs'
+    7. Esto actualiza el módulo principal donde vemos el archivo 'ghost_chrome.cy.js' que está en la carpeta 'cypress/e2e', damos click en el archivo
+    8. Luego vemos como se ejecutan las pruebas y el informe resultado para google chrome de estas una vez finalicen
+    9. Cerramos la ventana de chrome.
+    10. Desde cypress seleccionar el buscador Edge, cuando lo seleccionemos damos clic en el botón 'start E2E testing in Broswer'
+    11. En este momento se debió abrir una página en el buscador seleccionado anteriormente normalmente en la ruta 'http://localhost:55116/', en esta ventana en la parte izquierda donde estan los modulos de                navegacion seleccionamos 'Specs'
+    12. Esto actualiza el módulo principal donde vemos el archivo 'ghost_edge.cy.js' que está en la carpeta 'cypress/e2e', damos click en el archivo
+    13. Luego vemos como se ejecutan las pruebas y el informe resultado para google chrome de estas una vez finalicen
+    14. Cerramos la ventana de edge.
+    15. Desde cypress seleccionar el buscador Fire Fox, cuando lo seleccionemos damos clic en el botón 'start E2E testing in Broswer'
+    16. En este momento se debió abrir una página en el buscador seleccionado anteriormente normalmente en la ruta 'http://localhost:55116/', en esta ventana en la parte izquierda donde estan los modulos de                navegacion seleccionamos 'Specs'
+    17. Esto actualiza el módulo principal donde vemos el archivo 'ghost_firefox.cy.js' que está en la carpeta 'cypress/e2e', damos click en el archivo
+    18. Luego vemos como se ejecutan las pruebas y el informe resultado para google chrome de estas una vez finalicen
+    19. Cerramos la ventana de fire fox.
+
+# Pasos para ejecución RessembleJS sobre Cypress test E2E
+
+1. Haber ejecutado las pruebas de Cypress E2E (Instrucciones anteriores)
+2. Una vez ejecutadas las pruebas de Cypress E2E, se deben copiar la carpetas ubicada en la siguiente ruta: e2e_ghost_testing\e2e cypress ghost test\cypress\screenshots, hacia la siguiente 
+   ruta: Desarrollo sprint 1\Resemble\results   
+4. Luego abrimos una terminal que se ubique en la carpeta Desarrollo sprint 1\Resemble, y se ejecuta el comando 'npm install'
+5. Luego de terminar la ejecucion del comando anterior, ejecutamos 'node index.js'
+6. Al finalizar el comando, en la carpeta Desarrollo sprint 1\Resemble\results se mostraran los reportes de las pruebas de regresión visual  
+7. Dentro de cada una de estas carpetas esta el archivo 'report.html' con los resultados obtenidos de las pruebas de regresión visual
 
 # Pasos para ejecución Kraken con Ghost V3.41.1
 1. Instalación de Kraken y dependencias
