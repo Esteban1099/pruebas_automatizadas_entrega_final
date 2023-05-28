@@ -1,5 +1,8 @@
 # Pasos para ejecución Cypress test E2E
 
+# Precondicion 
+Se debe contar con los navegadores Google Chorme, Microsoft Edge y FireFox instalados.
+
 1. Instalación de Cypress versión 12.11.0
     1. Se contempla que se tenga instalado en la maquina local la versión 12.11.0 de Cypres, si no se cuenta con la versión instalada, siga los pasos de instalación en el siguiente link: https://docs.cypress.io/guides/getting-started/installing-cypress
     
@@ -35,11 +38,11 @@
     12. Esto actualiza el módulo principal donde vemos el archivo 'ghost_edge.cy.js' que está en la carpeta 'cypress/e2e', damos click en el archivo
     13. Luego vemos como se ejecutan las pruebas y el informe resultado para google chrome de estas una vez finalicen
     14. Cerramos la ventana de edge.
-    15. Desde cypress seleccionar el buscador Fire Fox, cuando lo seleccionemos damos clic en el botón 'start E2E testing in Broswer'
+    15. Desde cypress seleccionar el buscador FireFox, cuando lo seleccionemos damos clic en el botón 'start E2E testing in Broswer'
     16. En este momento se debió abrir una página en el buscador seleccionado anteriormente normalmente en la ruta 'http://localhost:55116/', en esta ventana en la parte izquierda donde estan los modulos de                navegacion seleccionamos 'Specs'
     17. Esto actualiza el módulo principal donde vemos el archivo 'ghost_firefox.cy.js' que está en la carpeta 'cypress/e2e', damos click en el archivo
     18. Luego vemos como se ejecutan las pruebas y el informe resultado para google chrome de estas una vez finalicen
-    19. Cerramos la ventana de fire fox.
+    19. Cerramos la ventana de FireFox.
 
 # Pasos para ejecución RessembleJS sobre Cypress test E2E
 
